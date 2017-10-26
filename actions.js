@@ -16,25 +16,25 @@ function addComment(text) {
 function removeComment(id, text) {
     return {
         type: REMOVE_COMMENT,
-        id: uuid.v4()
+        id: id
     }
 }
 function editComment(id, text) {
     return {
         type: EDIT_COMMENT,
         text,
-        id: uuid.v4()
+        id: id
     }
 }
 function thumbUpComment(id) {
     return {
         type: THUMB_UP_COMMENT,
-        id: uuid.v4()
+        id: id
     }
 }
 function ThumbDownComment(id) {
     return {
         type: THUMB_DOWN_COMMENT,
-        id: uuid.v4()
+        id: id
     }
 }
